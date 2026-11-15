@@ -1,0 +1,35 @@
+# Ambiente Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Segredos
+.env
+.env.*
+!.env.example
+
+# Dados locais
+lakehouse/landing/*
+lakehouse/curado/*
+lakehouse/quarentena/*
+
+# Logs e temporários
+logs/
+*.log
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Manter estrutura das pastas de dados no Git
+!lakehouse/landing/.gitkeep
+!lakehouse/curado/.gitkeep
+!lakehouse/quarentena/.gitkeep
